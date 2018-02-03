@@ -1,37 +1,96 @@
-## Welcome to GitHub Pages
+<!--  <p>
+      Based on original 2048 game code <a href="http://gabrielecirulli.com" target="_blank">  By Gabriele Cirulli</a>.
+      </p>  -->
+     <p>
+      Basado en <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024</a> por Veewo Studio y conceptualmente similar a <a href="http://asherv.com/threes/" target="_blank">Threes</a> por Asher Vollmer.
+     </p> 
 
-You can use the [editor on GitHub](https://github.com/humaafarrukh/humafarrukh.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+<!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sweet Cravings</title>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+    <link href="style/main.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="img/favicon.png" type="image/png" />
 
-### Markdown
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1 class="title">Sweet Cravings </h1>
+        <div class="scores-container">
+          <div class="score-container">0</div>
+          <div class="best-container">0</div>
+        </div>
+      </div>
+      <p class="game-intro">Join the sweet treats to merge together  </p>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+      <div class="game-container">
+        <div class="game-message">
+         
+          <div class="lower">
+           <a class="keep-playing-button">Continue Playing</a>
+           <a class="retry-button">Restart Game</a>
+         </div>
+       </div>
 
-```markdown
-Syntax highlighted code block
+       <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
 
-# Header 1
-## Header 2
-### Header 3
+      <div class="tile-container">
 
-- Bulleted
-- List
+      </div>
+    </div>
 
-1. Numbered
-2. List
+   <p class="game-explanation">
+      <strong class="important"> <strong>HOW TO PLAY</strong>: Use your arrow keys to move the tiles. When two tiles with the image touch, they merge into one!
+       </p>
+     
+ <!--
+       
+      <p>
+       2048 original por <a href="http://gabrielecirulli.com" target="_blank"> Gabriele Cirulli</a>.
+      </p>
+     <p>
+    
+  </p> -->
+</div>
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/humaafarrukh/humafarrukh.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<script src="js/animframe_polyfill.js"></script>
+<script src="js/keyboard_input_manager.js"></script>
+<script src="js/html_actuator.js"></script>
+<script src="js/grid.js"></script>
+<script src="js/tile.js"></script>
+<script src="js/local_score_manager.js"></script>
+<script src="js/game_manager.js"></script>
+<script src="js/application.js"></script>
+</body>
+</html>
